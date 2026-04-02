@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comedy With Chiya</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo">Comedy With Chiya</h2>
+
+  <ul class="menu">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <!-- HAMBURGER BUTTON -->
+  <button class="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-text">
+    <h1>Laugh, Sip <span>Chiya</span> & Enjoy Comedy</h1>
+    <p>Nepal's Stand-Up Comedy Community</p>
+    <button onclick="scrollToEvents()">Explore Events</button>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    Comedy With Chiya is a platform that blends laughter, creativity, and community.
+    We host stand-up shows, open mics, and charity events to entertain and make impact.
+  </p>
+</section>
+
+
+<!-- ACTIVITIES -->
+<section id="activities">
+  <h2>Our Activities</h2>
+  <div class="cards">
+
+    <a href="edition1.html" class="card-link">
+      <div class="card">
+        <img src="images/unnamed.jpg">
+        <div class="card-content">
+          <h3>Edition 1</h3>
+          <p>Our first comedy event full of laughter.</p>
+          <span>View Details →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="edition2.html" class="card-link">
+      <div class="card">
+        <img src="images/unnamed.jpg">
+        <div class="card-content">
+          <h3>Edition 2</h3>
+          <p>Bigger audience, stronger vibes.</p>
+          <span>View Details →</span>
+        </div>
+      </div>
+    </a>
+</section>
+
+
+<!-- EVENTS -->
+<section id="events">
+  <h2>Upcoming Events</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-content">
+        <h3>COMING SOON</h3>
+        <button onclick="bookTicket()">Comedy With Chiya</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TEAM -->
+<section id="team">
+  <h2>Our Team</h2>
+  <div class="cards">
+
+    <div class="card team-card">
+      <img src="images/476839034_929548115833630_8137640607446351860_n.jpg" alt="Nahush Chapagain">
+      <div class="team-info">
+        <h3>Nahush Chapagain</h3>
+        <p>Founder</p>
+      </div>
+    </div>
+
+    <div class="card team-card">
+      <img src="images/333871858_1884654655252952_1180759731771888749_n.jpg" alt="Rohit Khatri">
+      <div class="team-info">
+        <h3>Rohit Khatri</h3>
+        <p>Co-Founder</p>
+      </div>
+    </div>
+
+    <div class="card team-card">
+      <img src="images/590625462_1991716968279758_6265602562673017172_n.jpg" alt="Astah Dimdung">
+      <div class="team-info">
+        <h3>Astah Dimdung</h3>
+        <p>Creative Director</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <form action="https://formsubmit.co/chapagainn05@gmail.com" method="POST" onsubmit="return validateForm()">
+    <input type="hidden" name="_subject" value="New Message from Comedy With Chiya Website!">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="text" id="name" name="name" placeholder="Name">
+    <input type="email" id="email" name="email" placeholder="Email">
+    <textarea id="message" name="message" placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+
+<footer>
+  <p>© 2026 Comedy With Chiya</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
